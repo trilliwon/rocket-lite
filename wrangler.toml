@@ -1,0 +1,12 @@
+name = "rocket-lite"
+main = "src/index.ts"
+compatibility_date = "2025-01-21"
+[site]
+bucket = "./public"
+
+[triggers]
+crons = ["*/10 * * * *"]
+
+[[kv_namespaces]]
+binding = "APPSTORECONNECT_TOKEN_STORE"
+id = "ID"
